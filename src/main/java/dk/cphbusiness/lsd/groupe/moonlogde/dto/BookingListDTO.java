@@ -1,19 +1,19 @@
 package dk.cphbusiness.lsd.groupe.moonlogde.dto;
 
-import java.util.List;
+import java.util.Collection;
 
 public class BookingListDTO {
-    private List<BookingListDTO> bookingList;
+    private Collection<BookingListDTO> bookingList;
 
-    public BookingListDTO(List<BookingListDTO> bookingList) {
+    public BookingListDTO(Collection<BookingListDTO> bookingList) {
         this.bookingList = bookingList;
     }
 
-    public List<BookingListDTO> getBookingList() {
+    public Collection<BookingListDTO> getBookingList() {
         return bookingList;
     }
 
-    public void setBookingList(List<BookingListDTO> bookingList) {
+    public void setBookingList(Collection<BookingListDTO> bookingList) {
         this.bookingList = bookingList;
     }
 }

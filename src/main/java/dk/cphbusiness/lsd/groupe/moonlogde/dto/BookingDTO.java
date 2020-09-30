@@ -1,20 +1,18 @@
 package dk.cphbusiness.lsd.groupe.moonlogde.dto;
 
-
-import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Date;
-import java.util.List;
 
 public class BookingDTO {
 
-    private List<RoomDTO> rooms = new ArrayList();
+    private Collection<RoomDTO> rooms;
     private Date dateOfArrival, dateOfDeparture;
     private String guestPassportNumber;
     private int numberOfGuest;
 
     private boolean arrivalIsLate;
 
-    public BookingDTO(List<RoomDTO> rooms, Date dateOfArrival, Date dateOfDeparture, String guestPassportNumber, int numberOfGuest, boolean arrivalIsLate) {
+    public BookingDTO(Collection<RoomDTO> rooms, Date dateOfArrival, Date dateOfDeparture, String guestPassportNumber, int numberOfGuest, boolean arrivalIsLate) {
         this.rooms = rooms;
         this.dateOfArrival = dateOfArrival;
         this.dateOfDeparture = dateOfDeparture;
@@ -24,11 +22,11 @@ public class BookingDTO {
         this.arrivalIsLate = arrivalIsLate;
     }
 
-    public List<RoomDTO> getRooms() {
+    public Collection<RoomDTO> getRooms() {
         return rooms;
     }
 
-    public void setRooms(List<RoomDTO> rooms) {
+    public void setRooms(Collection<RoomDTO> rooms) {
         this.rooms = rooms;
     }
 

@@ -1,17 +1,16 @@
 package dk.cphbusiness.lsd.groupe.moonlogde.entitys;
 
-import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Date;
-import java.util.List;
 
 public class Booking {
-    private List<Room> rooms = new ArrayList();
+    private Collection<Room> rooms;
     private boolean arrivalIsLate;
     private Date dateOfArrival, dateOfDeparture;
     private String guestPassportNumber;
     private int numberOfGuest;
 
-    public Booking(List<Room> rooms, boolean arrivalIsLate, Date dateOfArrival, Date dateOfDeparture, String guestPassportNumber, int numberOfGuest) {
+    public Booking(Collection<Room> rooms, boolean arrivalIsLate, Date dateOfArrival, Date dateOfDeparture, String guestPassportNumber, int numberOfGuest) {
         this.rooms = rooms;
         this.arrivalIsLate = arrivalIsLate;
         this.dateOfArrival = dateOfArrival;
@@ -20,11 +19,11 @@ public class Booking {
         this.numberOfGuest = numberOfGuest;
     }
 
-    public List<Room> getRooms() {
+    public Collection<Room> getRooms() {
         return rooms;
     }
 
-    public void setRooms(List<Room> rooms) {
+    public void setRooms(Collection<Room> rooms) {
         this.rooms = rooms;
     }
 

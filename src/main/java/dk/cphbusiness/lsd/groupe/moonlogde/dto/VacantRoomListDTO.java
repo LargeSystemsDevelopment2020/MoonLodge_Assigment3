@@ -1,20 +1,20 @@
 package dk.cphbusiness.lsd.groupe.moonlogde.dto;
 
-import java.util.List;
+import java.util.Collection;
 
 public class VacantRoomListDTO {
 
-private List<RoomDTO> vacantRooms;
+private Collection<RoomDTO> vacantRooms;
 
-    public VacantRoomListDTO(List<RoomDTO> vacantRooms) {
+    public VacantRoomListDTO(Collection<RoomDTO> vacantRooms) {
         this.vacantRooms = vacantRooms;
     }
 
-    public List<RoomDTO> getVacantRooms() {
+    public Collection<RoomDTO> getVacantRooms() {
         return vacantRooms;
     }
 
-    public void setVacantRooms(List<RoomDTO> vacantRooms) {
+    public void setVacantRooms(Collection<RoomDTO> vacantRooms) {
         this.vacantRooms = vacantRooms;
     }
 }

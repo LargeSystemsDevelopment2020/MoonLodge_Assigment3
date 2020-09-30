@@ -1,10 +1,10 @@
 package dk.cphbusiness.lsd.groupe.moonlogde.interfaces;
 
 import dk.cphbusiness.lsd.groupe.moonlogde.dto.BookingDTO;
-import dk.cphbusiness.lsd.groupe.moonlogde.dto.BookingListDTO;
-import dk.cphbusiness.lsd.groupe.moonlogde.dto.VacantRoomListDTO;
+import dk.cphbusiness.lsd.groupe.moonlogde.dto.RoomDTO;
 import dk.cphbusiness.lsd.groupe.moonlogde.entitys.Room;
 
+import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 
@@ -20,7 +20,7 @@ public interface HotelManager {
      * @param numberRooms
      * @return List of vacant hotel rooms for search criteria
      */
-    public VacantRoomListDTO getHotelRoomList(String city, Date dateFrom, Date dateTo, int numberGuests, int numberRooms);
+    public Collection<RoomDTO> getHotelRoomList(String city, Date dateFrom, Date dateTo, int numberGuests, int numberRooms);
 
     /**
      * Takes the empty rooms selected in the frontend, along with a passport number from the guest
@@ -41,7 +41,7 @@ public interface HotelManager {
      * @param passportNo
      * @return List of bookings made with the given passport number
      */
-    public BookingListDTO findBookings(String passportNo);
+    public Collection<BookingDTO> findBookings(String passportNo);
 
     /**
      * Deletes a booking in the database, given a booking object

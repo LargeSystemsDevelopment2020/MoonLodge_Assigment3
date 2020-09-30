@@ -1,15 +1,14 @@
 package dk.cphbusiness.lsd.groupe.moonlogde.entitys;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Collection;
 
 public class Hotel {
-    private List<Room> Rooms = new ArrayList();
+    private Collection<Room> Rooms;
     private String name, address, city;
     private Double rating, distanceToCenter;
     private String id;
 
-    public Hotel(List<Room> rooms, String name, String address, String city, Double rating, Double distanceToCenter, String id) {
+    public Hotel(Collection<Room> rooms, String name, String address, String city, Double rating, Double distanceToCenter, String id) {
         Rooms = rooms;
         this.name = name;
         this.address = address;
@@ -19,11 +18,11 @@ public class Hotel {
         this.id = id;
     }
 
-    public List<Room> getRooms() {
+    public Collection<Room> getRooms() {
         return Rooms;
     }
 
-    public void setRooms(List<Room> rooms) {
+    public void setRooms(Collection<Room> rooms) {
         Rooms = rooms;
     }
 
