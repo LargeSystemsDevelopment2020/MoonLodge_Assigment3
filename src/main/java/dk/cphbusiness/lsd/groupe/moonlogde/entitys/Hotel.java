@@ -3,27 +3,42 @@ package dk.cphbusiness.lsd.groupe.moonlogde.entitys;
 import java.util.Collection;
 
 public class Hotel {
-    private Collection<Room> Rooms;
-    private String name, address, city;
-    private Double rating, distanceToCenter;
-    private String id;
 
-    public Hotel(Collection<Room> rooms, String name, String address, String city, Double rating, Double distanceToCenter, String id) {
-        Rooms = rooms;
+    private String name, address, city;
+    private double rating, distanceToCenter;
+    private long id;
+    private HeadQuarter headQuarter;
+    private Collection<Room> rooms;
+
+
+    public Hotel(String name, String address, String city, double rating, double distanceToCenter, HeadQuarter headQuarter, Collection<Room> rooms) {
         this.name = name;
         this.address = address;
         this.city = city;
         this.rating = rating;
         this.distanceToCenter = distanceToCenter;
-        this.id = id;
+        this.headQuarter = headQuarter;
+        this.rooms = rooms;
     }
 
     public Collection<Room> getRooms() {
-        return Rooms;
+        return rooms;
     }
 
     public void setRooms(Collection<Room> rooms) {
-        Rooms = rooms;
+        this.rooms = rooms;
+    }
+
+    public void addRoom(Room room) {
+        this.rooms.add(room);
+    }
+
+    public HeadQuarter getHeadQuarter() {
+        return headQuarter;
+    }
+
+    public void setHeadQuarter(HeadQuarter headQuarter) {
+        this.headQuarter = headQuarter;
     }
 
     public String getName() {
@@ -50,27 +65,27 @@ public class Hotel {
         this.city = city;
     }
 
-    public Double getRating() {
+    public double getRating() {
         return rating;
     }
 
-    public void setRating(Double rating) {
+    public void setRating(double rating) {
         this.rating = rating;
     }
 
-    public Double getDistanceToCenter() {
+    public double getDistanceToCenter() {
         return distanceToCenter;
     }
 
-    public void setDistanceToCenter(Double distanceToCenter) {
+    public void setDistanceToCenter(double distanceToCenter) {
         this.distanceToCenter = distanceToCenter;
     }
 
-    public String getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(long id) {
         this.id = id;
     }
 }

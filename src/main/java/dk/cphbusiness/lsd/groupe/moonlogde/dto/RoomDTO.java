@@ -1,36 +1,56 @@
 package dk.cphbusiness.lsd.groupe.moonlogde.dto;
 
-import dk.cphbusiness.lsd.groupe.moonlogde.entitys.RoomType;
+import java.sql.Date;
 
 public class RoomDTO {
-    private String id;
-    private RoomType roomtype;
+    private Date dateofArrival, dateofDeparture;
+    private long roomID;
+    private String type;
     private double price;
-    private int capacity;
-    private HotelDTO hotel;
+    private int maxCapacity;
 
-    public RoomDTO(String id, RoomType roomtype, double price, int capacity, HotelDTO hotel) {
-        this.id = id;
-        this.roomtype = roomtype;
+    public RoomDTO() {
+    }
+
+    public RoomDTO(Date dateofArrival, Date dateofDeparture, long id, String type, double price, int maxCapacity) {
+        this.dateofArrival = dateofArrival;
+        this.dateofDeparture = dateofDeparture;
+        this.roomID = id;
+        this.type = type;
         this.price = price;
-        this.capacity = capacity;
-        this.hotel = hotel;
+        this.maxCapacity = maxCapacity;
     }
 
-    public String getId() {
-        return id;
+    public Date getDateofArrival() {
+        return dateofArrival;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setDateofArrival(Date dateofArrival) {
+        this.dateofArrival = dateofArrival;
     }
 
-    public RoomType getRoomtype() {
-        return roomtype;
+    public Date getDateofDeparture() {
+        return dateofDeparture;
     }
 
-    public void setRoomtype(RoomType roomtype) {
-        this.roomtype = roomtype;
+    public void setDateofDeparture(Date dateofDeparture) {
+        this.dateofDeparture = dateofDeparture;
+    }
+
+    public long getId() {
+        return roomID;
+    }
+
+    public void setId(long id) {
+        this.roomID = id;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public double getPrice() {
@@ -41,11 +61,11 @@ public class RoomDTO {
         this.price = price;
     }
 
-    public int getCapacity() {
-        return capacity;
+    public int getMaxCapacity() {
+        return maxCapacity;
     }
 
-    public void setCapacity(int capacity) {
-        this.capacity = capacity;
+    public void setMaxCapacity(int maxCapacity) {
+        this.maxCapacity = maxCapacity;
     }
 }

@@ -1,30 +1,25 @@
 package dk.cphbusiness.lsd.groupe.moonlogde.entitys;
 
-import java.util.Collection;
-import java.util.Date;
+import java.util.List;
 
 public class Booking {
-    private Collection<Room> rooms;
+    private long id;
     private boolean arrivalIsLate;
-    private Date dateOfArrival, dateOfDeparture;
-    private String guestPassportNumber;
-    private int numberOfGuest;
+    private List<RoomBooking> roomBookings;
+    private List<Guest> guests;
 
-    public Booking(Collection<Room> rooms, boolean arrivalIsLate, Date dateOfArrival, Date dateOfDeparture, String guestPassportNumber, int numberOfGuest) {
-        this.rooms = rooms;
+    public Booking(boolean arrivalIsLate, List<RoomBooking> roomBookings, List<Guest> guests) {
         this.arrivalIsLate = arrivalIsLate;
-        this.dateOfArrival = dateOfArrival;
-        this.dateOfDeparture = dateOfDeparture;
-        this.guestPassportNumber = guestPassportNumber;
-        this.numberOfGuest = numberOfGuest;
+        this.roomBookings = roomBookings;
+        this.guests = guests;
     }
 
-    public Collection<Room> getRooms() {
-        return rooms;
+    public long getId() {
+        return id;
     }
 
-    public void setRooms(Collection<Room> rooms) {
-        this.rooms = rooms;
+    public void setId(long id) {
+        this.id = id;
     }
 
     public boolean isArrivalIsLate() {
@@ -35,35 +30,25 @@ public class Booking {
         this.arrivalIsLate = arrivalIsLate;
     }
 
-    public Date getDateOfArrival() {
-        return dateOfArrival;
+    public List<RoomBooking> getRoomBookings() {
+        return roomBookings;
     }
 
-    public void setDateOfArrival(Date dateOfArrival) {
-        this.dateOfArrival = dateOfArrival;
+    public void setRoomBookings(List<RoomBooking> roomBookings) {
+        this.roomBookings = roomBookings;
+    }
+    public void addRoomBooking(RoomBooking roomBooking) {
+        this.roomBookings.add(roomBooking);
     }
 
-    public Date getDateOfDeparture() {
-        return dateOfDeparture;
+    public List<Guest> getGuests() {
+        return guests;
     }
 
-    public void setDateOfDeparture(Date dateOfDeparture) {
-        this.dateOfDeparture = dateOfDeparture;
+    public void setGuests(List<Guest> guests) {
+        this.guests = guests;
     }
-
-    public String getGuestPassportNumber() {
-        return guestPassportNumber;
-    }
-
-    public void setGuestPassportNumber(String guestPassportNumber) {
-        this.guestPassportNumber = guestPassportNumber;
-    }
-
-    public int getNumberOfGuest() {
-        return numberOfGuest;
-    }
-
-    public void setNumberOfGuest(int numberOfGuest) {
-        this.numberOfGuest = numberOfGuest;
+    public void addCustomer(Guest guest) {
+        this.guests.add(guest);
     }
 }
