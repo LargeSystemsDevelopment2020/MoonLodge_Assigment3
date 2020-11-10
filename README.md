@@ -1,4 +1,4 @@
-# MoonLodge_Assigment3  
+# MoonLodge_Contract
 Group E  
 
 - [Logic Data Model](https://github.com/LargeSystemsDevelopment2020/MoonLodge/blob/master/diagrams/LogicDataModel.md)
@@ -15,12 +15,12 @@ This project can be used as a Java dependency
 Copy this into the pom file of your project to use it:
 ```yml
 <repositories>
-        <repository>
-            <id>lsd-repository</id>
-            <name>Internet mirror for rasmuslynge.com</name>
-            <url>http://rasmuslynge.com:8081/repository/internal/</url>
-        </repository>
-    </repositories>
+    <repository>
+        <id>lsd-repository</id>          
+        <name>Internet mirror for rasmuslynge.com</name>
+        <url>http://rasmuslynge.com:8081/repository/internal/</url>
+    </repository>
+</repositories>
 <dependencies>
     <dependency>
         <groupId>dk.cphbusiness.lsd.groupe.moonloodge</groupId>
