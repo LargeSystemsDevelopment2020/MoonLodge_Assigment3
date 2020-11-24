@@ -1,0 +1,52 @@
+<settings>
+    <profiles>
+        <profile>
+            <id>Repository Proxy</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <!-- place repo xml here -->
+            <distributionManagement>
+                <snapshotRepository>
+                    <id>moonlodge</id>
+                    <url>http://206.81.29.87:8081/repository/moonlodge/</url>
+                </snapshotRepository>
+            </distributionManagement>
+
+            <repositories>
+                <repository>
+                    <id>moonlodge</id>
+                    <name>MoonLodge Repository</name>
+                    <url>http://206.81.29.87:8081/repository/moonlodge/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>moonlodge</id>
+                    <name>MoonLodge Repository</name>
+                    <url>http://206.81.29.87:8081/repository/moonlodge/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>
+    </profiles>
+    <!-- place authentication xml here -->
+    <servers>
+        <server>
+            <id>moonlodge</id>
+            <username>admin</username>
+            <password>admin1234</password>
+        </server>
+    </servers>
+</settings>
