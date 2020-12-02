@@ -7,25 +7,24 @@ import java.util.List;
 
 public class VacantHotelRoomDTO {
 
-    private List<RoomDTO> rooms;
+    private RoomDTO room;
     private Hotel hotel;
 
 
-
-    public VacantHotelRoomDTO(List<RoomDTO> rooms, Hotel hotel) {
-        this.rooms = rooms;
+    public VacantHotelRoomDTO(RoomDTO room, Hotel hotel) {
+        this.room = room;
         this.hotel = hotel;
     }
 
     public VacantHotelRoomDTO() {
     }
 
-    public List<RoomDTO> getRooms() {
-        return rooms;
+    public RoomDTO getRoom() {
+        return room;
     }
 
-    public void setRooms(List<RoomDTO> rooms) {
-        this.rooms = rooms;
+    public void setRoom(RoomDTO room) {
+        this.room = room;
     }
 
     public Hotel getHotel() {
