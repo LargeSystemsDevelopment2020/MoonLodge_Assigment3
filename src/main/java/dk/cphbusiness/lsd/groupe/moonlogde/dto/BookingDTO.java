@@ -2,6 +2,7 @@ package dk.cphbusiness.lsd.groupe.moonlogde.dto;
 
 import dk.cphbusiness.lsd.groupe.moonlogde.entitys.Hotel;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class BookingDTO {
@@ -50,5 +51,15 @@ public class BookingDTO {
 
     public void setHotel(Hotel hotel) {
         this.hotel = hotel;
+    }
+
+    @Override
+    public String toString() {
+        return "BookingDTO{" +
+                "bookingID=" + bookingID +
+                ", rooms=" + rooms +
+                ", passportNumbers=" + Arrays.toString(passportNumbers) +
+                ", hotel=" + hotel +
+                '}';
     }
 }

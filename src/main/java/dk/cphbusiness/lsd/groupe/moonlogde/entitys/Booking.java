@@ -54,4 +54,14 @@ public class Booking {
     public void addCustomer(Guest guest) {
         this.guests.add(guest);
     }
+
+    @Override
+    public String toString() {
+        return "Booking{" +
+                "id=" + id +
+                ", arrivalIsLate=" + arrivalIsLate +
+                ", roomBookings=" + roomBookings +
+                ", guests=" + guests +
+                '}';
+    }
 }

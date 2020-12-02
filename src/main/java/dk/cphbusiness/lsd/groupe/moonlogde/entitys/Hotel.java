@@ -91,4 +91,18 @@ public class Hotel {
     public void setId(long id) {
         this.id = id;
     }
+
+    @Override
+    public String toString() {
+        return "Hotel{" +
+                "name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", city='" + city + '\'' +
+                ", rating=" + rating +
+                ", distanceToCenter=" + distanceToCenter +
+                ", id=" + id +
+                ", headQuarter=" + headQuarter +
+                ", rooms=" + rooms +
+                '}';
+    }
 }

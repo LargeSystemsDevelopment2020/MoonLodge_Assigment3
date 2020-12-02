@@ -72,4 +72,16 @@ public class RoomDTO {
     public void setMaxCapacity(int maxCapacity) {
         this.maxCapacity = maxCapacity;
     }
+
+    @Override
+    public String toString() {
+        return "RoomDTO{" +
+                "dateofArrival=" + dateofArrival +
+                ", dateofDeparture=" + dateofDeparture +
+                ", roomID=" + roomID +
+                ", type='" + type + '\'' +
+                ", price=" + price +
+                ", maxCapacity=" + maxCapacity +
+                '}';
+    }
 }

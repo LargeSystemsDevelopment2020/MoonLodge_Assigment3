@@ -40,4 +40,13 @@ public class HeadQuarter {
     public void setId(long id) {
         this.id = id;
     }
+
+    @Override
+    public String toString() {
+        return "HeadQuarter{" +
+                "id=" + id +
+                ", countryCode='" + countryCode + '\'' +
+                ", hotels=" + hotels +
+                '}';
+    }
 }

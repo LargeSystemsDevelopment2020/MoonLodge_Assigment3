@@ -37,7 +37,17 @@ public class Guest {
     public void setBookings(List<Booking> bookings) {
         this.bookings = bookings;
     }
+
     public void addBooking(Booking booking) {
         this.bookings.add(booking);
+    }
+
+    @Override
+    public String toString() {
+        return "Guest{" +
+                "id=" + id +
+                ", passportNumber='" + passportNumber + '\'' +
+                ", bookings=" + bookings +
+                '}';
     }
 }
