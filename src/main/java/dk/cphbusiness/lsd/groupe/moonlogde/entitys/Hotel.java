@@ -21,6 +21,9 @@ public class Hotel {
         this.rooms = rooms;
     }
 
+    public Hotel() {
+    }
+
     public Collection<Room> getRooms() {
         return rooms;
     }

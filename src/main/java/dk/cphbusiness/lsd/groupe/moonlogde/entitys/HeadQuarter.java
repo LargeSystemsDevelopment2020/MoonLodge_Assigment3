@@ -11,6 +11,9 @@ public class HeadQuarter {
         this.countryCode = countryCode;
     }
 
+    public HeadQuarter() {
+    }
+
     public String getCountryCode() {
         return countryCode;
     }

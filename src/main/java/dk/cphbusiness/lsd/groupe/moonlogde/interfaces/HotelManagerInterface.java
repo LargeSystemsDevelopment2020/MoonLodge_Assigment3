@@ -4,10 +4,12 @@ import dk.cphbusiness.lsd.groupe.moonlogde.dto.BookingDTO;
 import dk.cphbusiness.lsd.groupe.moonlogde.dto.VacantHotelRoomDTO;
 import dk.cphbusiness.lsd.groupe.moonlogde.entitys.Room;
 
+import java.rmi.Remote;
+import java.rmi.RemoteException;
 import java.sql.Date;
 import java.util.List;
 
-public interface HotelManagerInterface {
+public interface HotelManagerInterface extends Remote {
 
 
     /**
@@ -21,20 +23,20 @@ public interface HotelManagerInterface {
      * @param numberRooms  Number of rooms the guests have booked
      * @return List of vacant hotel rooms for search criteria
      */
-    public List<VacantHotelRoomDTO> getHotelRoomList(String city, Date dateFrom, Date dateTo, int numberGuests, int numberRooms);
+    public List<VacantHotelRoomDTO> getHotelRoomList(String city, Date dateFrom, Date dateTo, int numberGuests, int numberRooms) throws RemoteException;
 
     /**
      * Takes the empty rooms selected in the frontend, along with a passport number from the guest
      * and creates the booking in the database
      *
-     * @param roomsit
+     * @param rooms
      * @param passportNumbers
      * @param dateFrom
      * @param dateTo
      * @param arrivalIsLate
      * @return Booking information with the purpose of confirming the booking in the frontend
      */
-    public BookingDTO createBooking(List<Room> rooms, String[] passportNumbers, Date dateFrom, Date dateTo, boolean arrivalIsLate);
+    public BookingDTO createBooking(List<Room> rooms, String[] passportNumbers, Date dateFrom, Date dateTo, boolean arrivalIsLate) throws RemoteException;
 
 
     /**
@@ -43,7 +45,7 @@ public interface HotelManagerInterface {
      * @param passportNumber
      * @return List of bookings made with the given passport number
      */
-    public List<BookingDTO> findBookings(String passportNumber);
+    public List<BookingDTO> findBookings(String passportNumber) throws RemoteException;
 
     /**
      * Deletes a booking in the database, given a booking object
@@ -51,7 +53,6 @@ public interface HotelManagerInterface {
      * @param bookingId
      * @return boolean for whether the delete statement was successful in database
      */
-    public boolean cancelBooking(long bookingId);
-
+    public boolean cancelBooking(long bookingId) throws RemoteException;
 
 }

@@ -18,6 +18,9 @@ public class Room {
         this.hotel = hotel;
     }
 
+    public Room() {
+    }
+
     public long getId() {
         return id;
     }

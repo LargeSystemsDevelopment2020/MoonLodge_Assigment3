@@ -10,12 +10,14 @@ public class VacantHotelRoomDTO {
     private List<RoomDTO> rooms;
     private Hotel hotel;
 
-    public VacantHotelRoomDTO() {
-    }
+
 
     public VacantHotelRoomDTO(List<RoomDTO> rooms, Hotel hotel) {
         this.rooms = rooms;
         this.hotel = hotel;
+    }
+
+    public VacantHotelRoomDTO() {
     }
 
     public List<RoomDTO> getRooms() {

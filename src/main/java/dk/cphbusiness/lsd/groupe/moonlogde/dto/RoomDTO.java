@@ -3,7 +3,7 @@ package dk.cphbusiness.lsd.groupe.moonlogde.dto;
 import java.sql.Date;
 
 public class RoomDTO {
-    private Date dateofArrival, dateofDeparture;
+    private long dateofArrival, dateofDeparture;
     private long roomID;
     private String type;
     private double price;
@@ -12,7 +12,7 @@ public class RoomDTO {
     public RoomDTO() {
     }
 
-    public RoomDTO(Date dateofArrival, Date dateofDeparture, long id, String type, double price, int maxCapacity) {
+    public RoomDTO(long dateofArrival, long dateofDeparture, long id, String type, double price, int maxCapacity) {
         this.dateofArrival = dateofArrival;
         this.dateofDeparture = dateofDeparture;
         this.roomID = id;
@@ -21,19 +21,23 @@ public class RoomDTO {
         this.maxCapacity = maxCapacity;
     }
 
-    public Date getDateofArrival() {
+    public long getRoomID() {
+        return roomID;
+    }
+
+    public long getDateofArrival() {
         return dateofArrival;
     }
 
-    public void setDateofArrival(Date dateofArrival) {
+    public void setDateofArrival(long dateofArrival) {
         this.dateofArrival = dateofArrival;
     }
 
-    public Date getDateofDeparture() {
+    public long getDateofDeparture() {
         return dateofDeparture;
     }
 
-    public void setDateofDeparture(Date dateofDeparture) {
+    public void setDateofDeparture(long dateofDeparture) {
         this.dateofDeparture = dateofDeparture;
     }
 

@@ -11,6 +11,9 @@ public class Guest {
         this.passportNumber = passportNumber;
     }
 
+    public Guest() {
+    }
+
     public long getId() {
         return id;
     }

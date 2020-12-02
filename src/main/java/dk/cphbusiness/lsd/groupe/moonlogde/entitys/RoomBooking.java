@@ -5,15 +5,18 @@ import java.util.List;
 
 public class RoomBooking {
     private long id;
-    private Date dateofArrival, dateOfDeparture;
+    private long dateofArrival, dateOfDeparture;
     private Room room;
     private Booking booking;
 
-    public RoomBooking(Date dateofArrival, Date dateOfDeparture, Room room, Booking booking) {
+    public RoomBooking(long dateofArrival, long dateOfDeparture, Room room, Booking booking) {
         this.dateofArrival = dateofArrival;
         this.dateOfDeparture = dateOfDeparture;
         this.room = room;
         this.booking = booking;
+    }
+
+    public RoomBooking() {
     }
 
     public long getId() {
@@ -24,19 +27,19 @@ public class RoomBooking {
         this.id = id;
     }
 
-    public Date getDateofArrival() {
+    public long getDateofArrival() {
         return dateofArrival;
     }
 
-    public void setDateofArrival(Date dateofArrival) {
+    public void setDateofArrival(long dateofArrival) {
         this.dateofArrival = dateofArrival;
     }
 
-    public Date getDateOfDeparture() {
+    public long getDateOfDeparture() {
         return dateOfDeparture;
     }
 
-    public void setDateOfDeparture(Date dateOfDeparture) {
+    public void setDateOfDeparture(long dateOfDeparture) {
         this.dateOfDeparture = dateOfDeparture;
     }
 

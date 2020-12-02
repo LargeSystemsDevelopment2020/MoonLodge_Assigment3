@@ -14,6 +14,9 @@ public class Booking {
         this.guests = guests;
     }
 
+    public Booking() {
+    }
+
     public long getId() {
         return id;
     }
