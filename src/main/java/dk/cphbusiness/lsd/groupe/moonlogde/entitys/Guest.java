@@ -1,8 +1,9 @@
 package dk.cphbusiness.lsd.groupe.moonlogde.entitys;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class Guest {
+public class Guest implements Serializable {
     private long id;
     private String passportNumber;
     private List<Booking> bookings;

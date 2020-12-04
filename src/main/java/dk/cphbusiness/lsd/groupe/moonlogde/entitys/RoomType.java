@@ -1,5 +1,7 @@
 package dk.cphbusiness.lsd.groupe.moonlogde.entitys;
 
-public enum RoomType {
+import java.io.Serializable;
+
+public enum RoomType implements Serializable {
     S,D,T,F,M
 }

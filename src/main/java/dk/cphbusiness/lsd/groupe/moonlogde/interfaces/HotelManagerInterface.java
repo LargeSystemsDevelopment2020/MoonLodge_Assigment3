@@ -21,6 +21,7 @@ public interface HotelManagerInterface extends Remote {
      * @param numberGuests Number of guest in the booking
      * @param numberRooms  Number of rooms the guests have booked
      * @return List of vacant hotel rooms for search criteria
+     * @throws RemoteException
      */
     public List<VacantHotelRoomDTO> getHotelRoomList(String city, long dateFrom, long dateTo, int numberGuests, int numberRooms) throws RemoteException;
 
@@ -29,13 +30,14 @@ public interface HotelManagerInterface extends Remote {
      * and creates the booking in the database
      *
      * @param rooms
-     * @param passportNumbers
+     * @param passportNumber
      * @param dateFrom
      * @param dateTo
      * @param arrivalIsLate
      * @return Booking information with the purpose of confirming the booking in the frontend
+     * @throws RemoteException
      */
-    public BookingDTO createBooking(List<Room> rooms, String[] passportNumbers, long dateFrom, long dateTo, boolean arrivalIsLate) throws RemoteException;
+    public BookingDTO createBooking(List<Room> rooms, String passportNumber, long dateFrom, long dateTo, boolean arrivalIsLate) throws RemoteException;
 
 
     /**
@@ -43,6 +45,7 @@ public interface HotelManagerInterface extends Remote {
      *
      * @param passportNumber
      * @return List of bookings made with the given passport number
+     * @throws RemoteException
      */
     public List<BookingDTO> findBookings(String passportNumber) throws RemoteException;
 
@@ -51,6 +54,7 @@ public interface HotelManagerInterface extends Remote {
      *
      * @param bookingId
      * @return boolean for whether the delete statement was successful in database
+     * @throws RemoteException
      */
     public boolean cancelBooking(long bookingId) throws RemoteException;
 

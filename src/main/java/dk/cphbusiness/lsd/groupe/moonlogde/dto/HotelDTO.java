@@ -2,14 +2,16 @@ package dk.cphbusiness.lsd.groupe.moonlogde.dto;
 
 import dk.cphbusiness.lsd.groupe.moonlogde.entitys.HeadQuarter;
 
-public class HotelDTO {
+import java.io.Serializable;
+
+public class HotelDTO implements Serializable {
     private String name, address, city;
     private double rating, distanceToCenter;
-    private long id;
+    private String id;
     private long headQuarterId;
 
 
-    public HotelDTO(String name, String address, String city, double rating, double distanceToCenter, long id, long headQuarterId) {
+    public HotelDTO( String id, String name, String address, String city, double rating, double distanceToCenter, long headQuarterId) {
         this.name = name;
         this.address = address;
         this.city = city;
@@ -62,11 +64,11 @@ public class HotelDTO {
         this.distanceToCenter = distanceToCenter;
     }
 
-    public long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(String id) {
         this.id = id;
     }
 

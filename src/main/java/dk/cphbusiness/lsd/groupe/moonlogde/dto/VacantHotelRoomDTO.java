@@ -4,17 +4,18 @@ package dk.cphbusiness.lsd.groupe.moonlogde.dto;
 import dk.cphbusiness.lsd.groupe.moonlogde.entitys.Hotel;
 import dk.cphbusiness.lsd.groupe.moonlogde.entitys.RoomType;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class VacantHotelRoomDTO {
+public class VacantHotelRoomDTO implements Serializable {
 
     private long id;
     private RoomType roomType;
     private int maxCapacity;
     private double price;
-    private Hotel hotel;
+    private HotelDTO hotel;
 
-    public VacantHotelRoomDTO(long id, RoomType roomType, int maxCapacity, double price, Hotel hotel) {
+    public VacantHotelRoomDTO(long id, RoomType roomType, int maxCapacity, double price, HotelDTO hotel) {
         this.id = id;
         this.roomType = roomType;
         this.maxCapacity = maxCapacity;
@@ -57,11 +58,11 @@ public class VacantHotelRoomDTO {
         this.price = price;
     }
 
-    public Hotel getHotel() {
+    public HotelDTO getHotel() {
         return hotel;
     }
 
-    public void setHotel(Hotel hotel) {
+    public void setHotel(HotelDTO hotel) {
         this.hotel = hotel;
     }
 

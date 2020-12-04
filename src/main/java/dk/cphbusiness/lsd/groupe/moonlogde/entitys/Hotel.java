@@ -1,12 +1,13 @@
 package dk.cphbusiness.lsd.groupe.moonlogde.entitys;
 
+import java.io.Serializable;
 import java.util.Collection;
 
-public class Hotel {
+public class Hotel implements Serializable {
 
     private String name, address, city;
     private double rating, distanceToCenter;
-    private long id;
+    private String id;
     private HeadQuarter headQuarter;
     private Collection<Room> rooms;
 
@@ -84,11 +85,11 @@ public class Hotel {
         this.distanceToCenter = distanceToCenter;
     }
 
-    public long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(String id) {
         this.id = id;
     }
 

@@ -1,8 +1,9 @@
 package dk.cphbusiness.lsd.groupe.moonlogde.dto;
 
+import java.io.Serializable;
 import java.sql.Date;
 
-public class RoomDTO {
+public class RoomDTO implements Serializable  {
     private long dateofArrival, dateofDeparture;
     private long roomID;
     private String type;

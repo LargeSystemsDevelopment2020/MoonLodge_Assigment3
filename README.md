@@ -19,7 +19,7 @@ Copy this into the pom file of your project to use it:
     <dependency>
         <groupId>dk.cphbusiness.lsd.groupe.moonloodge</groupId>
         <artifactId>MoonLodgeContract</artifactId>
-        <version>1.0.2</version>
+        <version>1.1.1</version>
     </dependency>
 </dependencies>
 ```

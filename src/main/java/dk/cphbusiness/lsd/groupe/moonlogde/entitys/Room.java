@@ -1,8 +1,9 @@
 package dk.cphbusiness.lsd.groupe.moonlogde.entitys;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class Room {
+public class Room implements Serializable {
 
     private long id;
     private RoomType roomType;

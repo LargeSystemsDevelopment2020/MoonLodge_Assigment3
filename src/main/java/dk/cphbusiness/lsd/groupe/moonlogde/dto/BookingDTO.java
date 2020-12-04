@@ -2,22 +2,23 @@ package dk.cphbusiness.lsd.groupe.moonlogde.dto;
 
 import dk.cphbusiness.lsd.groupe.moonlogde.entitys.Hotel;
 
+import java.io.Serializable;
 import java.util.Arrays;
 import java.util.List;
 
-public class BookingDTO {
+public class BookingDTO implements Serializable {
     private long bookingID;
     private List<RoomDTO> rooms;
-    private String[] passportNumbers;
+    private String passportNumber;
     private Hotel hotel;
 
     public BookingDTO() {
     }
 
-    public BookingDTO(long id, List<RoomDTO> rooms, String[] passportNumbers, Hotel hotel) {
+    public BookingDTO(long id, List<RoomDTO> rooms, String passportNumber, Hotel hotel) {
         this.bookingID = id;
         this.rooms = rooms;
-        this.passportNumbers = passportNumbers;
+        this.passportNumber = passportNumber;
         this.hotel = hotel;
     }
 
@@ -37,12 +38,12 @@ public class BookingDTO {
         this.bookingID = id;
     }
 
-    public String[] getPassportNumbers() {
-        return passportNumbers;
+    public String getPassportNumber() {
+        return passportNumber;
     }
 
-    public void setPassportNumbers(String[] passportNumbers) {
-        this.passportNumbers = passportNumbers;
+    public void setPassportNumber(String passportNumbers) {
+        this.passportNumber = passportNumber;
     }
 
     public Hotel getHotel() {
@@ -58,7 +59,7 @@ public class BookingDTO {
         return "BookingDTO{" +
                 "bookingID=" + bookingID +
                 ", rooms=" + rooms +
-                ", passportNumbers=" + Arrays.toString(passportNumbers) +
+                ", passportNumber=" + passportNumber +
                 ", hotel=" + hotel +
                 '}';
     }

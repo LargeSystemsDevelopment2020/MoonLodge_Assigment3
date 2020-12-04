@@ -1,8 +1,9 @@
 package dk.cphbusiness.lsd.groupe.moonlogde.entitys;
 
+import java.io.Serializable;
 import java.util.Collection;
 
-public class HeadQuarter {
+public class HeadQuarter implements Serializable {
     private long id;
     private String countryCode;
     private Collection<Hotel> hotels;
