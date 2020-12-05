@@ -1,13 +1,14 @@
 pipeline {
-    agent {
-        docker {
-            image "maven:3.6.3-adoptopenjdk-14"
-        }
-    }
+    agent any
+    //{    
+        // docker {
+        //     image "maven:3.6.3-adoptopenjdk-14"
+        // }
+   // }
     stages {
-        stage('clean install') {
+        stage(' mvn package') {
             steps {
-                sh 'mvn clean install'
+                sh 'mvn package'
             }
         }
     }
