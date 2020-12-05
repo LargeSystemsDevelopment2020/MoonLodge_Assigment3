@@ -6,7 +6,7 @@
 
     <groupId>dk.cphbusiness.lsd.groupe.moonlogde</groupId>
     <artifactId>MoonLodgeContract</artifactId>
-    <version>1.1.3</version>
+    <version>1.1.4</version>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
