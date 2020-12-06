@@ -3,7 +3,6 @@ package dk.cphbusiness.lsd.groupe.moonlogde.dto;
 import dk.cphbusiness.lsd.groupe.moonlogde.entitys.Hotel;
 
 import java.io.Serializable;
-import java.util.Arrays;
 import java.util.List;
 
 public class BookingDTO implements Serializable {

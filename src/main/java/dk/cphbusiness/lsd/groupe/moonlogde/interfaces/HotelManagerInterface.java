@@ -4,6 +4,7 @@ import dk.cphbusiness.lsd.groupe.moonlogde.dto.BookingDTO;
 import dk.cphbusiness.lsd.groupe.moonlogde.dto.VacantHotelRoomDTO;
 import dk.cphbusiness.lsd.groupe.moonlogde.entitys.Room;
 
+import java.io.Serializable;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.util.List;
