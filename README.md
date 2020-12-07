@@ -3,6 +3,7 @@ Group E
 
 
 # Using this repo as a dependency
+[**Find newest version here**](http://rasmuslynge.com:8081/#artifact/dk.cphbusiness.lsd.groupe.moonloodge/MoonLodgeContract) (can only be opened with http connection. firefox works)
 
 This project can be used as a Java dependency 
 
