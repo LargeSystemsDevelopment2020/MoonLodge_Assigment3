@@ -14,7 +14,7 @@
 * * *   
 
 ### Service description
-The service must provide the functionality to see and book hotel rooms and manage bookings in terms of showing bookings from passport nr. and cancel bookings.
+The service must provide the functionality to see and book hotel rooms and manage bookings in terms of showing bookings from passport nr. and cancelling bookings.
 
 ### Uptime/availability (usually percentage of all time)  
 98%.  
