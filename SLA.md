@@ -12,28 +12,28 @@
 | 	| 			|			|			|
 			
 
-## Service description
+### Service description
 The service must provide the functionality to see and book hotel rooms and manage bookings in terms of showing bookings from passport nr. and cancel bookings.
 
-## Uptime/availability (usually percentage of all time)  
+### Uptime/availability (usually percentage of all time)  
 98%.  
 
-## Mean response time (average time to serve answer)  
+### Mean response time (average time to serve answer)  
 Depending on bandwith.
 Roughly around 100 to 300 ms. with a 200/20 download/upload connection.
   
   
-## Failure frequency (number of failures/ timeouts over time)  
+### Failure frequency (number of failures/ timeouts over time)  
 1 failure pr. week.  
 
-## Max time to answer support request
+### Max time to answer support request
 Up to 24 hours.  
   
-## Max time to recover (time to recover after outage)  
+### Max time to recover (time to recover after outage)  
 Up to 1 business day after answering support request.  
   
   
-# Support Contact  
+## Support Contact  
 Send email to one or more of the following:  
 **backend:** cph-rj173@cphbusiness.dk, cph-mk523@cphbusiness.dk.  
 **frontend:** cph-jg134@cphbusiness.dk, cph-kt118@cphbusiness.dk.  
