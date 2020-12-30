@@ -7,8 +7,9 @@
   
 |Version|	Date|	Desc.|	Author|
 |---|---|---|---|
-|1.0.0|	30/11/2020|	First SLA|	Rasmus, Mathias|
-| | | |
+|1.0.0	|	30/11/2020	| First SLA		| Rasmus, Mathias	|
+| 1.0.1 | 30/12/2020 		| More specific SLA	| Rasmus 		|
+| 	| 			|			|			|
 			
 
 
