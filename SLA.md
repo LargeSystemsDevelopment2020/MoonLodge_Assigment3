@@ -11,6 +11,7 @@
 |1.0.1	| 30/12/2020 		| More specific SLA	| Rasmus 		|
 | 	| 			|			|			|
 			
+* * *   
 
 ### Service description
 The service must provide the functionality to see and book hotel rooms and manage bookings in terms of showing bookings from passport nr. and cancel bookings.
@@ -32,6 +33,8 @@ Up to 24 hours.
 ### Max time to recover (time to recover after outage)  
 Up to 1 business day after answering support request.  
   
+  
+* * *  
   
 ## Support Contact  
 Send email to one or more of the following:  
