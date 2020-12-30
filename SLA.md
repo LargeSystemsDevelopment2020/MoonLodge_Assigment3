@@ -17,7 +17,7 @@
 The service must provide the functionality to see and book hotel rooms and manage bookings in terms of showing bookings from passport nr. and cancelling bookings.
 
 ### Uptime/availability (usually percentage of all time)  
-98%.  
+Not below 98% uptime.  
 
 ### Mean response time (average time to serve answer)  
 Depending on bandwith.
