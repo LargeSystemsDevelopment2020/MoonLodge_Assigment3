@@ -32,7 +32,10 @@ Up to 24 hours.
   
 ### Max time to recover (time to recover after outage)  
 Up to 1 business day after answering support request.  
-  
+    
+### Monitoring  
+Monitoring of the application can be done from [here](http://206.81.29.87:3000/explore?orgId=1&left=%5B%22now-7d%22,%22now%22,%22Loki2%22,%7B%22expr%22:%22%7Bfilename%3D%5C%22%2Fvar%2Flog%2Fsyslog%5C%22%7D%20%7C%3D%20%5C%22dk.lsd%5C%22%22%7D%5D).  
+Contact the backend group by email for login credentials for the site.  
   
 * * *  
   
