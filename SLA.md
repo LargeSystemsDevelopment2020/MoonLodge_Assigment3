@@ -27,10 +27,10 @@ Roughly around 100 to 300 ms. with a 200/20 download/upload connection.
 1 failure pr. week.  
 
 ## Max time to answer support request
-24 hours.  
+Up to 24 hours.  
   
 ## Max time to recover (time to recover after outage)  
-1 business day.  
+Up to 1 business day after answering support request.  
   
   
 # Support Contact  
